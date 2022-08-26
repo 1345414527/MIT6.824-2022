@@ -120,6 +120,7 @@ func (c *Coordinator) scanTaskState() {
 		}
 	}
 
+	//如果当前任务完成了
 	if allDone {
 		if c.taskPhase == TaskPhase_Map {
 			//进入Reduce阶段
